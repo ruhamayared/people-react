@@ -11,9 +11,9 @@ function Show(props) {
 
       <h2>Update {person.name}</h2>
       <Form action={`/update/${person._id}`} method="post">
-        <input type="input" name="name" placeholder="person's name" />
+        <input defaultValue={person.name} type="input" name="name" placeholder="person's name" />
         <input type="input" name="image" placeholder="person's picture" />
-        <input type="input" name="title" placeholder="person's title" />
+        <input defaultValue={person.title} type="input" name="title" placeholder="person's title" />
         <input type="submit" value={`Update ${person.name}`} />
       </Form>
 

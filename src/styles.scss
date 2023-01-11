@@ -52,3 +52,11 @@ button#delete {
   font-size: 1.3em;
   padding: 10px;
 }
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+  grid-gap: 16px;
+  justify-content: center;
+}
